@@ -7,10 +7,12 @@ import com.limowdv.limtask.model.dto.CreateTaskRequest;
 import com.limowdv.limtask.model.dto.TaskResponse;
 import com.limowdv.limtask.model.dto.UpdateTaskRequest;
 import com.limowdv.limtask.repository.TaskRepository;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Service
 public class ITaskService implements TaskService{
 
     private final TaskRepository repository;
